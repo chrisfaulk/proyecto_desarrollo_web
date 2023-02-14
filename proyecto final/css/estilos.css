@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+}
+
+.col {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    font-family: 'Inconsolata', monospace;
+    border: 3px solid #001D3B;
+    border-radius: 22px;
+    color: white;
+    background-color: #001D3B;
+    height: auto;
+}
+
+.Imagen_de_presentación {
+    margin-top: 15px;
+    border: solid 3px #001D3B;
+    border-radius: 22px;
+    width: 200px;
+    height: 200px;
+}
+
+.Subtítulo {
+    padding-left: 10px;
+    background-color: #001D3B;
+    font-size: 25px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.ícono {
+    background-color: #001D3B;
+    margin-left: 15px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.boton {
+    background-color: #001D3B;
+    border: 1px solid #001D3B;
+    color: white;
+    cursor: pointer;
+}
+
+.col2 {
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header2 {
+    color: white;
+    background-color: #1B5775;
+    padding-left: 15px;
+    border: 3px solid #1B5775;
+    border-radius: 22px;
+}
+
+.nombre {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    background-color: #1B5775;
+}
+
+.oficio {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    background-color: #1B5775;
+}
+
+.descripcion {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    background-color: #1B5775;
+}
+
+.Subtítulo2 {
+    padding-left: 20px;
+    color: white;
+    border: 3px solid #423952;
+    border-radius: 22px;
+    background-color: #423952;
+}
+
+.fecha {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+}
+
+.institucion {
+    font-family: 'Roboto', sans-serif;
+    font: 15px bold;
+}
+
+.aptitudes {
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+}
+
+#linea {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.linea_recta {
+    font-size: 15px;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+/* A partir de acá se configura la web para el modo oscuro */
+
+/* Estas son las propiedades que el botón va a tomar */
+
+input[type="checkbox"] {
+    margin-top: 15px;
+    margin-left: 10px;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: grey;
+    appearance: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+/* Estas las que va a tener cuando el botón se utilice */
+
+input[type="checkbox"]:checked {
+    background-color: #2B2B2B
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.7s ease;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+
+
+/* Estas son las propiedades que la página va a tomar al presionar el botón */
+
+.modo_oscuro {
+    background-color: #252525;
+    color: #f2f2f2;
+}
+
+
+@media only screen and (min-width: 720px) {
+
+.col {
+    margin-left: 50px;
+    width: 35%;
+    float: left;
+}
+
+.col2 {
+    padding-left: 30px;
+    width: 55%;
+    float: left;
+}
+
+}
+
+@media only screen and (max-width: 719px){
+
+.col {
+    margin-left: 30px;
+    width: 75%;
+    float:center;
+}
+
+
+.col2 {
+    padding-left: 30px;
+    width: 75%;
+    float: center;
+}
+}
+
+@media only screen and (max-width: 350px){ 
+
+.col {
+    width: 100%;
+    float:center;
+}
+
+.col2 {
+    padding-left: 30px;
+    float: center;
+    width: 100%;
+}
+}
